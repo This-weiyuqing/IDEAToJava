@@ -6,13 +6,12 @@
  * Code with UTF-8
  */
 
-package Day611FromGui;
+package Day611_FromGui;
 
 
 import javax.swing.*;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;

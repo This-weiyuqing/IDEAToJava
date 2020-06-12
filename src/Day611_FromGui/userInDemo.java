@@ -6,7 +6,7 @@
  * Code with UTF-8
  */
 
-package Day611FromGui;
+package Day611_FromGui;
 
 public class userInDemo {
     public static void main(String[] args) {
