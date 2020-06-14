@@ -1,4 +1,4 @@
-package Day612_Cryption;
+/*package Day612_Cryption;
 
 import java.io.*;
 import java.security.InvalidAlgorithmParameterException;
@@ -77,7 +77,7 @@ public class FileEncAndDec {
 
 //		fos.write(EncoderByBase64(filecontent));//Base64
 
-//		fos.write(EncoderByDES(filecontent));//DES		
+//		fos.write(EncoderByDES(filecontent));//DES
 
         fos.write(EncoderByPBE(filecontent,key, salt));
 
@@ -117,7 +117,7 @@ public class FileEncAndDec {
     }
 
     ///////////////////////////////////////////////////////////////////
-    /*                             Base64                            */
+    *//*                             Base64                            *//*
     ///////////////////////////////////////////////////////////////////
 
     //Base64加密算法
@@ -138,7 +138,7 @@ public class FileEncAndDec {
             IllegalBlockSizeException, BadPaddingException{
         DESKeySpec keySpec=new DESKeySpec(keyBytes);  //加密算法
         SecretKeyFactory keyFactory=SecretKeyFactory.getInstance(ALGORITHM);
-        SecretKey key=keyFactory.generateSecret(keySpec);   //产生密钥      
+        SecretKey key=keyFactory.generateSecret(keySpec);   //产生密钥
 
         Cipher cipher=Cipher.getInstance("DES/CBC/PKCS5Padding");
         cipher.init(Cipher.ENCRYPT_MODE, key, new IvParameterSpec(keySpec.getKey()));
@@ -161,7 +161,7 @@ public class FileEncAndDec {
     }
 
     ///////////////////////////////////////////////////////////////////
-    /*                             PBE                               */
+    *//*                             PBE                               *//*
     ///////////////////////////////////////////////////////////////////
 
     //PBE salt初始化
@@ -196,7 +196,7 @@ public class FileEncAndDec {
     }
 
     ///////////////////////////////////////////////////////////////////
-    /*                             MD5                               */
+    *//*                             MD5                               *//*
     ///////////////////////////////////////////////////////////////////
 
     //MD5加密算法
@@ -207,4 +207,4 @@ public class FileEncAndDec {
         byte[] newByte = md5.digest();
         return newByte;
     }
-}
+}*/
